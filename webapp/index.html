@@ -26,8 +26,12 @@
         <link rel="stylesheet" href="css/leaflet-control-geocoder.Geocoder.css">
         <link rel="stylesheet" href="css/leaflet-measure.css">
         <style>
-        html, body, #map {
-            width: 100%;
+        body {
+          margin: 0;
+          height: calc(100% - 51px); /* minus navbar incl. border */
+        }
+        html, #map {
+            position: relative;
             height: 100%;
             padding: 0;
             margin: 0;
@@ -36,25 +40,23 @@
           min-height: 100px;
           overflow-y: scroll;
         }
+        header.navbar {
+          margin-bottom: 0;
+          position: relative;
+        }
         </style>
         <title></title>
     </head>
     <body>
       <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
-        <div id="above-map">
-        <div id="outlet-card" class="m-3 card border-dark align-self-center">
-          <div class="card-header">
-            <span id="card-header-text">NYUAD WIDH Abu Dhabi Map</span>
-          </div>
-          <div id="outlet-card-body" class="card-body collapse show text-dark">
-            This map contains places of interest and some travel adivce for visitors to the NYU Abu Dhabi Winter Institute in Digital Humanities.
-            <a href="https://wp.nyu.edu/widh" target="_blank">Return to the Winter Institute website.</a>
+        <div class="container">
+          <div class="navbar-header">
+            <a href="https://wp.nyu.edu/widh" target="_blank" class="navbar-brand">NYUAD WIDH Visitors' Map</a>
           </div>
           <nav class="collapse navbar-collapse bs-navbar-collapse">
           </nav>
         </div>
       </header>
-
     </div>
         <div id="map">
         </div>
