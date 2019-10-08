@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="MobileOptimized" content="320"/>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta http-equiv="cleartype" content="on">        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="DC.title" content="NYUAD WIDH map" />
+        <title>NYUAD WIDH map</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+        integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+        crossorigin="" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/leaflet-search.css">
+        <link rel="stylesheet" href="css/leaflet-control-geocoder.Geocoder.css">
+        <link rel="stylesheet" href="css/leaflet-measure.css">
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }.leaflet-popup-content {
+          min-width: 200px;
+          min-height: 100px;
+          overflow-y: scroll;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+      <div id="above-map">
+      <div id="outlet-card" class="m-3 card border-dark align-self-center">
+        <div class="card-header">
+          <span id="card-header-text">NYUAD WIDH Abu Dhabi Map</span>
+        </div>
+        <div id="outlet-card-body" class="card-body collapse show text-dark">
+          This map contains places of interest and some travel adivce for visitors to the NYU Abu Dhabi Winter Institute in Digital Humanities.
+          <a href="https://wp.nyu.edu/widh" target="_blank">Return to the Winter Institute website.</a>
+        </div>
+      </div>
+    </div>
+        <div id="map">
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/multi-style-layer.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="js/leaflet-control-geocoder.Geocoder.js"></script>
+        <script src="js/leaflet-measure.js"></script>
+        <script src="js/leaflet-search.js"></script>
+        <script src="data/NYUADBusLine_1.js"></script>
+        <script src="data/NYUADBusStops_2.js"></script>
+        <script src="data/PlacesofInterest_3.js"></script>
+        <script>
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:10
+        }).fitBounds([[24.40342437553712,54.3905105997919],[24.482109551621278,54.473055803382074]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
+        var measureControl = new L.Control.Measure({
+            position: 'topleft',
+            primaryLengthUnit: 'meters',
+            secondaryLengthUnit: 'kilometers',
+            primaryAreaUnit: 'sqmeters',
+            secondaryAreaUnit: 'hectares'
+        });
+        measureControl.addTo(map);
+        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
+        .innerHTML = '';
+        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
+        .className += ' fas fa-ruler';
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+        }
+        var layer_GoogleRoad_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+            opacity: 1.0,
+            attribution: '<a href="https://www.google.at/permissions/geoguidelines/attr-guide.html">Map data ©2015 Google</a>',
+        });
+        layer_GoogleRoad_0;
+        map.addLayer(layer_GoogleRoad_0);
+        function pop_NYUADBusLine_1(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Name'] !== null ? Autolinker.link(String(feature.properties['Name'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['description'] !== null ? Autolinker.link(String(feature.properties['description'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_NYUADBusLine_1_0() {
+            return {
+                pane: 'pane_NYUADBusLine_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'round',
+                lineJoin: 'round',
+                weight: 6.0,
+                fillOpacity: 0,
+            }
+        }
+        function style_NYUADBusLine_1_1() {
+            return {
+                pane: 'pane_NYUADBusLine_1',
+                opacity: 1,
+                color: 'rgba(218,218,218,1.0)',
+                dashArray: '',
+                lineCap: 'round',
+                lineJoin: 'round',
+                weight: 4.0,
+                fillOpacity: 0,
+            }
+        }
+        function style_NYUADBusLine_1_2() {
+            return {
+                pane: 'pane_NYUADBusLine_1',
+                opacity: 1,
+                color: 'rgba(39,39,39,1.0)',
+                dashArray: '10,5',
+                lineCap: 'round',
+                lineJoin: 'round',
+                weight: 1.0,
+                fillOpacity: 0,
+            }
+        }
+        map.createPane('pane_NYUADBusLine_1');
+        map.getPane('pane_NYUADBusLine_1').style.zIndex = 401;
+        map.getPane('pane_NYUADBusLine_1').style['mix-blend-mode'] = 'normal';
+        var layer_NYUADBusLine_1 = new L.geoJson.multiStyle(json_NYUADBusLine_1, {
+            attribution: '',
+            pane: 'pane_NYUADBusLine_1',
+            onEachFeature: pop_NYUADBusLine_1,
+            styles: [style_NYUADBusLine_1_0,style_NYUADBusLine_1_1,style_NYUADBusLine_1_2,]
+        });
+        bounds_group.addLayer(layer_NYUADBusLine_1);
+        map.addLayer(layer_NYUADBusLine_1);
+        function pop_NYUADBusStops_2(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Name'] !== null ? Autolinker.link(String(feature.properties['Name'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['description'] !== null ? Autolinker.link(String(feature.properties['description'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_NYUADBusStops_2_0() {
+            return {
+                pane: 'pane_NYUADBusStops_2',
+        rotationAngle: 0.0,
+        rotationOrigin: 'center center',
+        icon: L.icon({
+            iconUrl: 'markers/highway=bus_stop.svg',
+            iconSize: [30.4, 30.4]
+        }),
+            }
+        }
+        map.createPane('pane_NYUADBusStops_2');
+        map.getPane('pane_NYUADBusStops_2').style.zIndex = 402;
+        map.getPane('pane_NYUADBusStops_2').style['mix-blend-mode'] = 'normal';
+        var layer_NYUADBusStops_2 = new L.geoJson(json_NYUADBusStops_2, {
+            attribution: '',
+            pane: 'pane_NYUADBusStops_2',
+            onEachFeature: pop_NYUADBusStops_2,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.marker(latlng, style_NYUADBusStops_2_0(feature));
+            },
+        });
+        bounds_group.addLayer(layer_NYUADBusStops_2);
+        map.addLayer(layer_NYUADBusStops_2);
+        function pop_PlacesofInterest_3(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2"><strong>Name</strong><br />' + (feature.properties['Name'] !== null ? Autolinker.link(String(feature.properties['Name'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2"><strong>Description</strong><br />' + (feature.properties['Description'] !== null ? Autolinker.link(String(feature.properties['Description'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2"><strong>Website</strong><br />' + (feature.properties['Website'] !== null ? Autolinker.link(String(feature.properties['Website'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_PlacesofInterest_3_0() {
+            return {
+                pane: 'pane_PlacesofInterest_3',
+        rotationAngle: 0.0,
+        rotationOrigin: 'center center',
+        icon: L.icon({
+            iconUrl: 'markers/blue-marker.svg',
+            iconSize: [68.39999999999999, 68.39999999999999]
+        }),
+            }
+        }
+        map.createPane('pane_PlacesofInterest_3');
+        map.getPane('pane_PlacesofInterest_3').style.zIndex = 403;
+        map.getPane('pane_PlacesofInterest_3').style['mix-blend-mode'] = 'normal';
+        var layer_PlacesofInterest_3 = new L.geoJson(json_PlacesofInterest_3, {
+            attribution: '',
+            pane: 'pane_PlacesofInterest_3',
+            onEachFeature: pop_PlacesofInterest_3,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.marker(latlng, style_PlacesofInterest_3_0(feature));
+            },
+        });
+        bounds_group.addLayer(layer_PlacesofInterest_3);
+        map.addLayer(layer_PlacesofInterest_3);
+        var osmGeocoder = new L.Control.Geocoder({
+            collapsed: true,
+            position: 'topleft',
+            text: 'Search',
+            title: 'Testing'
+        }).addTo(map);
+        document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
+        .className += ' fa fa-search';
+        document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
+        .title += 'Search for a place';
+        var baseMaps = {};
+        L.control.layers(baseMaps,{'<img src="legend/PlacesofInterest_Legend.png" /> Places of Interest': layer_PlacesofInterest_3,'<img src="legend/NYUADBusStops_2.png" /> NYU/198-170 Bus Stops': layer_NYUADBusStops_2,'<img src="legend/NYUADBusLine_1.png" /> NYU/198-170 Bus Line': layer_NYUADBusLine_1,"Basemap": layer_GoogleRoad_0,},{collapsed:false}).addTo(map);
+        setBounds();
+        position: 'bottomright';
+        map.addControl(new L.Control.Search({
+            layer: layer_PlacesofInterest_3,
+            initial: false,
+            hideMarkerOnCollapse: true,
+            propertyName: 'Name'}));
+        document.getElementsByClassName('search-button')[0].className +=
+         ' fa fa-binoculars';
+        </script>
+    </body>
+</html>

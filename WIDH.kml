@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>WIDH</name>
+    <description/>
+    <Style id="icon-1532-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1532-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1532-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1532-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1532-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-000000-1200-normal">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>1.2</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-000000-1200-highlight">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>1.8</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-000000-1200">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-000000-1200-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-000000-1200-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Places of Interest</name>
+      <Placemark>
+        <name>NYUAD Library and Campus Center (C2)</name>
+        <description><![CDATA[Description: NYUAD Library is located on the third floor of the Campus Center. This building is often referred to as C2. All WIDH classes will take place in the library.<br><br>On the first floor of the Campus Center (one floor up from the ground floor), is a small market with snacks, drinks, bread, cheese, and some fresh fruit and veg.<br>Website: https://nyuad.nyu.edu/content/dam/nyuad/news/documents/campus-map-with-directions.pdf]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value><![CDATA[NYUAD Library is located on the third floor of the Campus Center. This building is often referred to as C2. All WIDH classes will take place in the library.<br>
+On the first floor of the Campus Center (one floor up from the ground floor), is a small market with snacks, drinks, bread, cheese, and some fresh fruit and veg.]]></value>
+          </Data>
+          <Data name="Website">
+            <value>https://nyuad.nyu.edu/content/dam/nyuad/news/documents/campus-map-with-directions.pdf</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.4345847,24.5244616,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Blacksmith Coffee Company</name>
+        <description><![CDATA[Description: Founded by an NYUAD alumnus, Blacksmith sells specialty coffee such as pour over and cold brew. Their filter coffee (called batch brew on the menu) is fantastic!<br>Website: https://www.blacksmith.ae/home]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value>Founded by an NYUAD alumnus, Blacksmith sells specialty coffee such as pour over and cold brew. Their filter coffee (called batch brew on the menu) is fantastic!</value>
+          </Data>
+          <Data name="Website">
+            <value>https://www.blacksmith.ae/home</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.4332547,24.523774,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NYU Abu Dhabi Welcome Center</name>
+        <description><![CDATA[Description: Ask for directions or refill a bus pass in the Welcome Center. If staying on campus, check in here.<br><br>The NYUAD 198-170 bus picks up from here.<br>Website: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value><![CDATA[Ask for directions or refill a bus pass in the Welcome Center. If staying on campus, check in here.<br>
+The NYUAD 198-170 bus picks up from here.]]></value>
+          </Data>
+          <Data name="Website">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.43371,24.5233491,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>East Dining Hall</name>
+        <description><![CDATA[Description: Campus East and Campus West restaurants are community favorites with rotating menus at breakfast, lunch, and dinner. <br>Website: https://nyuad.nyu.edu/en/campus-life/housing/dining.html#tab-1-dining-halls]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value>Campus East and Campus West restaurants are community favorites with rotating menus at breakfast, lunch, and dinner. </value>
+          </Data>
+          <Data name="Website">
+            <value>https://nyuad.nyu.edu/en/campus-life/housing/dining.html#tab-1-dining-halls</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.4361833,24.5227022,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Manarat Al Saadiyat</name>
+        <description><![CDATA[Description: Manarat Al Saadiyat hosts exhibitions, cultural activities, and community events. Check their schedule for what's happening during your time in Abu Dhabi.<br><br>Manarat Al Saadiyat is accessible via the NYUAD 198-170 bus line,  stop 4.<br>Website: http://manaratalsaadiyat.ae/en/see.and.do/weekly.schedule.aspx]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value><![CDATA[Manarat Al Saadiyat hosts exhibitions, cultural activities, and community events. Check their schedule for what's happening during your time in Abu Dhabi.<br>
+Manarat Al Saadiyat is accessible via the NYUAD 198-170 bus line,  stop 4.]]></value>
+          </Data>
+          <Data name="Website">
+            <value>http://manaratalsaadiyat.ae/en/see.and.do/weekly.schedule.aspx</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.4189099,24.5342114,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Louvre Abu Dhabi</name>
+        <description><![CDATA[Description: Louvre Abu Dhabi has both permanent and rotating exhibitions. The building itself, which is visible from NYUAD, was designed by Jean Nouvel and is absolutely breathtaking both inside and out. The grounds around the Louvre also enjoyable for walking or taking photos of the Abu Dhabi skyline.<br><br>A taxi will cost approximately 15-20 dirhams. <br>Website: https://www.louvreabudhabi.ae/]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value><![CDATA[Louvre Abu Dhabi has both permanent and rotating exhibitions. The building itself, which is visible from NYUAD, was designed by Jean Nouvel and is absolutely breathtaking both inside and out. The grounds around the Louvre also enjoyable for walking or taking photos of the Abu Dhabi skyline.<br>
+A taxi will cost approximately 15-20 dirhams. ]]></value>
+          </Data>
+          <Data name="Website">
+            <value>https://www.louvreabudhabi.ae/</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.3981368,24.5336954,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Central Souq and World Trade Center</name>
+        <description><![CDATA[Description: The Central Souq has many shops for buying souvenirs and gifts from Abu Dhabi. The Hub in the World Trade Center has several popular restaurants with a full beverage menu.<br>Website: https://www.wtcad.ae/en/home]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value>The Central Souq has many shops for buying souvenirs and gifts from Abu Dhabi. The Hub in the World Trade Center has several popular restaurants with a full beverage menu.</value>
+          </Data>
+          <Data name="Website">
+            <value>https://www.wtcad.ae/en/home</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.3563142,24.488852,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Qasr Al Watan</name>
+        <description><![CDATA[Description: Gain a rare insight into Emirati governance and culture through the Palace’s exhibits. Visitors may also enjoy the House of Knowledge and Qasr Al Watan Library. <br><br>A taxi will cost approximately 40-50 dirhams from NYUAD campus.<br>Website: https://www.qasralwatan.ae/]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value><![CDATA[Gain a rare insight into Emirati governance and culture through the Palace’s exhibits. Visitors may also enjoy the House of Knowledge and Qasr Al Watan Library. <br>
+A taxi will cost approximately 40-50 dirhams from NYUAD campus.]]></value>
+          </Data>
+          <Data name="Website">
+            <value>https://www.qasralwatan.ae/</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.3119356,24.4564024,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Qasr Al Hosn</name>
+        <description><![CDATA[Description: Qasr Al Hosn is a great museum showcasing the history and founding of the UAE. It is one of the oldest buildings in Abu Dhabi. <br>Website: https://qasralhosn.ae/]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value>Qasr Al Hosn is a great museum showcasing the history and founding of the UAE. It is one of the oldest buildings in Abu Dhabi. </value>
+          </Data>
+          <Data name="Website">
+            <value>https://qasralhosn.ae/</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.354723,24.482237,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Ray's Bar]]></name>
+        <description><![CDATA[Description: Located near the top of Jumeirah Hotel at Etihad Towers Hotel is Ray's Bar. Visit Ray's for some great views of the city from the 62nd floor!<br>Website: https://www.jumeirah.com/Dine/Abu-Dhabi/Etihad-Towers-Rays-Bar]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value><![CDATA[Located near the top of Jumeirah Hotel at Etihad Towers Hotel is Ray's Bar. Visit Ray's for some great views of the city from the 62nd floor!]]></value>
+          </Data>
+          <Data name="Website">
+            <value>https://www.jumeirah.com/Dine/Abu-Dhabi/Etihad-Towers-Rays-Bar</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.3214390000001,24.458214,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LARTE Restaurant</name>
+        <description><![CDATA[Description: LARTE is a restaurant located within Manart Al Saadiyat, and the outdoor terrace is a pleasant place to enjoy Italian foods and a wide selection of beverages. <br><br>LARTE is reachable via the NYUAD 198-170 bus, stop 4.<br>Website: https://www.larte.ae/abu-dhabi]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value><![CDATA[LARTE is a restaurant located within Manart Al Saadiyat, and the outdoor terrace is a pleasant place to enjoy Italian foods and a wide selection of beverages. <br>
+LARTE is reachable via the NYUAD 198-170 bus, stop 4.]]></value>
+          </Data>
+          <Data name="Website">
+            <value>https://www.larte.ae/abu-dhabi</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.4196921,24.5345143,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Captain Tony's Hydro Watersports Centre]]></name>
+        <description><![CDATA[Description: Rent a kayak or stand-up paddle board and explore Abu Dhabi's serene and beautiful Eastern Mangroves National Park. Reservations are not required, but there is a limited supply. There are several other rental places if Captain Tony's is booked. Captain Tony's has other locations in Abu Dhabi and offers many outdoor adventure opportunities.<br><br>Taxi from campus is approximately 40-50 dirhams. Ask to be dropped off at Anantara Eastern Mangroves Hotel. Then, walk through the hotel to find Captain Tony's on the Eastern Mangroves Promenade.<br>Website: Kayak rental: https://www.captaintonys.ae/services/water-sports/kayaking-canoeing-rental-guided-tours<br>Stand-Up Paddle Board rental: https://www.captaintonys.ae/services/water-sports/stand-up-paddle-rental-guided-tours]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value><![CDATA[Rent a kayak or stand-up paddle board and explore Abu Dhabi's serene and beautiful Eastern Mangroves National Park. Reservations are not required, but there is a limited supply. There are several other rental places if Captain Tony's is booked. Captain Tony's has other locations in Abu Dhabi and offers many outdoor adventure opportunities.<br>
+Taxi from campus is approximately 40-50 dirhams. Ask to be dropped off at Anantara Eastern Mangroves Hotel. Then, walk through the hotel to find Captain Tony's on the Eastern Mangroves Promenade.]]></value>
+          </Data>
+          <Data name="Website">
+            <value>Kayak rental: https://www.captaintonys.ae/services/water-sports/kayaking-canoeing-rental-guided-tours
+Stand-Up Paddle Board rental: https://www.captaintonys.ae/services/water-sports/stand-up-paddle-rental-guided-tours</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.4375219999999,24.4468813,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Al Hudayriat Island</name>
+        <description><![CDATA[Description: Rent a bike or go for a run on the 10 or 5 kilometer loops located on Al Hudayriat Island. Bike rentals are 50 dirhams per hour from Yas Mena Cycles. There is also a public beach and many food trucks. The island has showers available.<br><br>Taxis are not in great supply on the island, so you may need to call a taxi or Careem for return to campus or elsewhere.<br>Website: https://www.travelabudhabi.ae/picture-gallery/al-hudayriat-island]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value><![CDATA[Rent a bike or go for a run on the 10 or 5 kilometer loops located on Al Hudayriat Island. Bike rentals are 50 dirhams per hour from Yas Mena Cycles. There is also a public beach and many food trucks. The island has showers available.<br>
+Taxis are not in great supply on the island, so you may need to call a taxi or Careem for return to campus or elsewhere.]]></value>
+          </Data>
+          <Data name="Website">
+            <value>https://www.travelabudhabi.ae/picture-gallery/al-hudayriat-island</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.3500666,24.4137371,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saadiyat Beach Club</name>
+        <description><![CDATA[Description: Saadiyat Beach Club has a pristine, sandy white beach with uninterrupted ocean views. The club also has a pool, gym facilities, lockers, shower and sauna, spa services, and several full-service restaurants.<br>Website: http://www.saadiyatbeachclub.ae/memberships/daypass]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value>Saadiyat Beach Club has a pristine, sandy white beach with uninterrupted ocean views. The club also has a pool, gym facilities, lockers, shower and sauna, spa services, and several full-service restaurants.</value>
+          </Data>
+          <Data name="Website">
+            <value>http://www.saadiyatbeachclub.ae/memberships/daypass</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.4499803,24.5581701,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Blue Whale Jet Ski Abu Dhabi Rental</name>
+        <description><![CDATA[Description: Jet ski rentals as well as bookings for other excursions are available. Some excursions have time and person requirements.<br>Blue Whale is located at Mina Port. A taxi will cost approximately 35 dirhams from campus.<br>Website: https://www.bluewhalejetski.com/jetski-abu-dhabi-rental-packages]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value>Jet ski rentals as well as bookings for other excursions are available. Some excursions have time and person requirements.
+Blue Whale is located at Mina Port. A taxi will cost approximately 35 dirhams from campus.</value>
+          </Data>
+          <Data name="Website">
+            <value>https://www.bluewhalejetski.com/jetski-abu-dhabi-rental-packages</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.374279,24.512774,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Abu Dhabi Central Bus Station</name>
+        <description><![CDATA[Description: The central bus station in Al Wahda has numerous bus services daily to Dubai, Sharjah, and Al Ain. Bus service to Dubai costs 25 dirhams. <br><br>For tickets to Dubai, you will have to purchase a ticket from the counter. You can use a Nol card on the Dubai bus, but there are not Nol card refill stations. Note that on Fridays the ticket counter does not open until after 1:00 p.m. (13:00).<br><br>If taking a bus to or from Dubai, the NYUAD 198-170 bus makes a stop at the station (stop 11).<br><br>Abu Dhabi city buses are reliable but infrequent. Check darb.ae for timings and stops, but information is subject to change.<br><br>Website: https://www.darb.ae/darbweb/map-viewer.html]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value><![CDATA[The central bus station in Al Wahda has numerous bus services daily to Dubai, Sharjah, and Al Ain. Bus service to Dubai costs 25 dirhams. <br>
+For tickets to Dubai, you will have to purchase a ticket from the counter. You can use a Nol card on the Dubai bus, but there are not Nol card refill stations. Note that on Fridays the ticket counter does not open until after 1:00 p.m. (13:00).<br>
+If taking a bus to or from Dubai, the NYUAD 198-170 bus makes a stop at the station (stop 11).<br>
+Abu Dhabi city buses are reliable but infrequent. Check darb.ae for timings and stops, but information is subject to change.
+]]></value>
+          </Data>
+          <Data name="Website">
+            <value>https://www.darb.ae/darbweb/map-viewer.html</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.3766422,24.470618,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sheikh Zayed Grand Mosque Center</name>
+        <description><![CDATA[Description: Sheikh Zayed Grand Mosque allows visitors during non-prayer times all days of the week. On Friday, it is open to visitors after 4:30 p.m. (16:30).<br>Website: https://www.szgmc.gov.ae/en/visit-mosque-visitors]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value>Sheikh Zayed Grand Mosque allows visitors during non-prayer times all days of the week. On Friday, it is open to visitors after 4:30 p.m. (16:30).</value>
+          </Data>
+          <Data name="Website">
+            <value>https://www.szgmc.gov.ae/en/visit-mosque-visitors</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.4759389999999,24.4126713,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Abu Dhabi Falcon Hospital</name>
+        <description><![CDATA[Description: The falcon hospital is a uniquely Abu Dhabi experience. Tours must be booked in advance.<br>Website: https://www.falconhospital.com/services/adfh-tourism/online-tour-booking]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value>The falcon hospital is a uniquely Abu Dhabi experience. Tours must be booked in advance.</value>
+          </Data>
+          <Data name="Website">
+            <value>https://www.falconhospital.com/services/adfh-tourism/online-tour-booking</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.6993359000001,24.4073267,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Abu Dhabi International Airport</name>
+        <description><![CDATA[Description: Taxis from the airport have a base cost of at least 20 dirhams (25 if arriving at night). If staying on campus, ask the driver to take Yas Island to NYUAD rather than driving through the city--this should save some money. <br><br>If staying at the Sheraton Corniche, a taxi from the airport will cost at least 100 dirham (about 30 USD), so you may want to take the bus. <br><br>The airport buses cost approximately 4.50 dirhams. The A2 bus to the city and Corniche runs 24 hours with buses every 30 minutes. Tickets are available from a machine in front of the airport bus stop, which is just outside of arrivals and past the taxi line.<br><br>If staying at the Sheraton on the Corniche or nearby, you can take the A2 bus to its final stop behind what is called the Serdar building. This will take about 1 hour depending on time of day. There is a pedestrian underpass in front of Sofitel (next to Serdar) that leads to the Sheraton Corniche. <br>Website: https://www.abudhabiairport.ae/en]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value><![CDATA[Taxis from the airport have a base cost of at least 20 dirhams (25 if arriving at night). If staying on campus, ask the driver to take Yas Island to NYUAD rather than driving through the city--this should save some money. <br>
+If staying at the Sheraton Corniche, a taxi from the airport will cost at least 100 dirham (about 30 USD), so you may want to take the bus. <br>
+The airport buses cost approximately 4.50 dirhams. The A2 bus to the city and Corniche runs 24 hours with buses every 30 minutes. Tickets are available from a machine in front of the airport bus stop, which is just outside of arrivals and past the taxi line.<br>
+If staying at the Sheraton on the Corniche or nearby, you can take the A2 bus to its final stop behind what is called the Serdar building. This will take about 1 hour depending on time of day. There is a pedestrian underpass in front of Sofitel (next to Serdar) that leads to the Sheraton Corniche. ]]></value>
+          </Data>
+          <Data name="Website">
+            <value>https://www.abudhabiairport.ae/en</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.6500736,24.441938,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Corniche Beach</name>
+        <description><![CDATA[Description: The Corniche is a great place to go for a run or leisurely walk. Bike and scooter shares are available. Download the Circ or Tier app to access the scooters. A credit card is required to unlock a bike. A taxi from NYUAD will cost approximately 30-40 dirhams depending on where the taxi stops along the Corniche.<br>Website: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value>The Corniche is a great place to go for a run or leisurely walk. Bike and scooter shares are available. Download the Circ or Tier app to access the scooters. A credit card is required to unlock a bike. A taxi from NYUAD will cost approximately 30-40 dirhams depending on where the taxi stops along the Corniche.</value>
+          </Data>
+          <Data name="Website">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.3401472,24.4740757,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saadiyat Public Beach</name>
+        <description><![CDATA[Description: Saadiyat Public Beach is an inexpensive way to enjoy Saadiyat's beautiful beaches. Sun loungers with umbrella are available to rent. Bringing a towel is recommended, but rental may be available. There are shower facilities and some dining options (pizza, ice cream) on site.<br>Website: https://emic.ae/portfolio_type/saadiyat-public-beach/]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value><![CDATA[Saadiyat Public Beach is an inexpensive way to enjoy Saadiyat's beautiful beaches. Sun loungers with umbrella are available to rent. Bringing a towel is recommended, but rental may be available. There are shower facilities and some dining options (pizza, ice cream) on site.]]></value>
+          </Data>
+          <Data name="Website">
+            <value>https://emic.ae/portfolio_type/saadiyat-public-beach/</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.4347871,24.5479978,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Yas Marina Circuit West Gate 20</name>
+        <description><![CDATA[Description: Rent bikes or go for a run around the Formula One Yas Marina Circuit. Bike rentals are free on Tuesday and Sunday.<br>Website: https://www.yasmarinacircuit.com/en/products/whats-on-track/trainyas/]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value>Rent bikes or go for a run around the Formula One Yas Marina Circuit. Bike rentals are free on Tuesday and Sunday.</value>
+          </Data>
+          <Data name="Website">
+            <value>https://www.yasmarinacircuit.com/en/products/whats-on-track/trainyas/</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.6028233,24.4753628,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Galleria</name>
+        <description><![CDATA[Description: The Four Seasons Hotel and the Rosewood Hotel, which are accessible from The Galleria Mall, both offer some of Abu Dhabi's best dining experiences with full-service beverage options. There are many other wonderful dining options within the Galleria Mall not listed on the websites such as La Petite Maison, Nusr Et, Nolu's, and Bentleys.<br><br>During January, the weather is nice enough to walk from NYUAD 198-170 bus stop 5. The walk will take approximately 25 minutes.<br>Website: Rosewood: https://www.rosewoodhotels.com/en/abu-dhabi/dining<br>Four Seasons: https://www.fourseasons.com/abudhabi/dining/]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value><![CDATA[The Four Seasons Hotel and the Rosewood Hotel, which are accessible from The Galleria Mall, both offer some of Abu Dhabi's best dining experiences with full-service beverage options. There are many other wonderful dining options within the Galleria Mall not listed on the websites such as La Petite Maison, Nusr Et, Nolu's, and Bentleys.<br>
+During January, the weather is nice enough to walk from NYUAD 198-170 bus stop 5. The walk will take approximately 25 minutes.]]></value>
+          </Data>
+          <Data name="Website">
+            <value>Rosewood: https://www.rosewoodhotels.com/en/abu-dhabi/dining
+Four Seasons: https://www.fourseasons.com/abudhabi/dining/</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.388751,24.5013774,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Sheraton Abu Dhabi Hotel & Resort]]></name>
+        <description><![CDATA[Description: The institute has reserved a block of rooms at the Sheraton Corniche. The hotel is a 10-15 minute walk to the NYUAD 198-170 bus line (stop 5). The bus will cost approximately 2.50 dirhams, and a taxi will cost about 35 dirhams.<br>Website: https://www.marriott.com/hotels/travel/auhsi-sheraton-abu-dhabi-hotel-and-resort/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value>The institute has reserved a block of rooms at the Sheraton Corniche. The hotel is a 10-15 minute walk to the NYUAD 198-170 bus line (stop 5). The bus will cost approximately 2.50 dirhams, and a taxi will cost about 35 dirhams.</value>
+          </Data>
+          <Data name="Website">
+            <value>https://www.marriott.com/hotels/travel/auhsi-sheraton-abu-dhabi-hotel-and-resort/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.3683978,24.500688,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>West Dining Hall</name>
+        <description><![CDATA[Description: Campus East and Campus West restaurants are community favorites with rotating menus at breakfast, lunch, and dinner. <br>Website: https://nyuad.nyu.edu/en/campus-life/housing/dining.html#tab-1-dining-halls]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value>Campus East and Campus West restaurants are community favorites with rotating menus at breakfast, lunch, and dinner. </value>
+          </Data>
+          <Data name="Website">
+            <value>https://nyuad.nyu.edu/en/campus-life/housing/dining.html#tab-1-dining-halls</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.4325667000001,24.5253468,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cultural Foundation</name>
+        <description><![CDATA[Description: Located on the same grounds as Qasr Al Hosn, the Cultural Foundation showcases Emirati culture through events and workshops. Entry to the foundation is free.<br>Website: https://culturalfoundation.ae]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value>Located on the same grounds as Qasr Al Hosn, the Cultural Foundation showcases Emirati culture through events and workshops. Entry to the foundation is free.</value>
+          </Data>
+          <Data name="Website">
+            <value>https://culturalfoundation.ae</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.3574145,24.4828463,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St Regis Hotel Saadiyat island Abu Dhabi</name>
+        <description><![CDATA[Description: The St. Regis Saadiyat is the closest hotel to NYUAD, and there are many dining options. There is also a small Spinney's supermarket with a good variety of food and other necessities. <br>A taxi to the St. Regist Saadiyat will cost approximately 12 dirhams (the minimum taxi fare).<br><br>Website: https://www.marriott.com/hotels/travel/auhxr-the-st-regis-saadiyat-island-resort-abu-dhabi/]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value><![CDATA[The St. Regis Saadiyat is the closest hotel to NYUAD, and there are many dining options. There is also a small Spinney's supermarket with a good variety of food and other necessities. 
+A taxi to the St. Regist Saadiyat will cost approximately 12 dirhams (the minimum taxi fare).
+]]></value>
+          </Data>
+          <Data name="Website">
+            <value>https://www.marriott.com/hotels/travel/auhxr-the-st-regis-saadiyat-island-resort-abu-dhabi/</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.4246239,24.539498,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Al Manara Pharmacy</name>
+        <description><![CDATA[Description: Feeling a little under the weather while visiting campus, or forget toothpaste? Visit the pharmacy on campus.<br>Website: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Description">
+            <value>Feeling a little under the weather while visiting campus, or forget toothpaste? Visit the pharmacy on campus.</value>
+          </Data>
+          <Data name="Website">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.4342874,24.5228017,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>NYUAD Bus Line</name>
+      <Placemark>
+        <name>198-170/NYUAD Bus</name>
+        <description>This bus line is accurate until the bus station. The line ends in Al Raha Beach/Al Zeina area. Line derived from an early 2019 Abu Dhabi Department of Transportation PDF map.</description>
+        <styleUrl>#line-000000-1200</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            54.4336587,24.5232396,0
+            54.4315412,24.5252054,0
+            54.4365623,24.5296758,0
+            54.4368179,24.5303042,0
+            54.4368072,24.5310948,0
+            54.4366999,24.5313925,0
+            54.436262,24.5320353,0
+            54.4352749,24.532621,0
+            54.4345468,24.5330138,0
+            54.4333237,24.5334237,0
+            54.4322723,24.5336189,0
+            54.4309848,24.5337946,0
+            54.4302338,24.5338141,0
+            54.4294399,24.533736,0
+            54.4285172,24.5336384,0
+            54.4279593,24.5335408,0
+            54.4272512,24.5333847,0
+            54.4263929,24.5329942,0
+            54.425556,24.5324867,0
+            54.4253415,24.5323696,0
+            54.4250824,24.5325052,0
+            54.424716,24.5327188,0
+            54.4241334,24.5330095,0
+            54.4228949,24.5334956,0
+            54.4219078,24.5335932,0
+            54.421307,24.5336518,0
+            54.4207062,24.5335151,0
+            54.420277,24.5333395,0
+            54.4195046,24.53291,0
+            54.4189252,24.5328319,0
+            54.4187744,24.5323372,0
+            54.4187101,24.5319272,0
+            54.4186028,24.5315954,0
+            54.4178947,24.5315368,0
+            54.4168218,24.5311464,0
+            54.415706,24.5307755,0
+            54.4145473,24.5303265,0
+            54.4128307,24.5297214,0
+            54.4109424,24.5285501,0
+            54.4097408,24.527574,0
+            54.4078739,24.526188,0
+            54.4059428,24.5247434,0
+            54.4030889,24.5226545,0
+            54.4013508,24.5213661,0
+            54.3988403,24.5193748,0
+            54.3971666,24.5178911,0
+            54.3956431,24.5163487,0
+            54.3937763,24.515275,0
+            54.3920811,24.5146502,0
+            54.3912442,24.5144159,0
+            54.3902143,24.5146112,0
+            54.3886693,24.5141231,0
+            54.3854721,24.511136,0
+            54.3829613,24.509347,0
+            54.3817168,24.5081365,0
+            54.3813306,24.5072775,0
+            54.3812447,24.505325,0
+            54.3813306,24.5042316,0
+            54.3810731,24.502982,0
+            54.3798285,24.5018886,0
+            54.3787556,24.5007952,0
+            54.3783118,24.5005184,0
+            54.3778934,24.5001669,0
+            54.3774106,24.4998643,0
+            54.3762412,24.4990442,0
+            54.3750074,24.4981753,0
+            54.3738057,24.4973162,0
+            54.3728401,24.496623,0
+            54.3716278,24.4958029,0
+            54.3702974,24.4948558,0
+            54.3688919,24.493899,0
+            54.3677399,24.4932044,0
+            54.3633196,24.4897481,0
+            54.3645748,24.487522,0
+            54.3668172,24.4842803,0
+            54.369199,24.4804332,0
+            54.3716666,24.4771914,0
+            54.3738768,24.4752287,0
+            54.377031,24.4715474,0
+            54.3799922,24.4681882,0
+            54.3813995,24.4659686,0
+            54.3883947,24.4719058,0
+            54.391828,24.4723355,0
+            54.3956903,24.466867,0
+            54.4046983,24.4527746,0
+            54.4091615,24.4482429,0
+            54.4187745,24.4449612,0
+            54.4230661,24.4429296,0
+            54.4275293,24.4430859,0
+            54.4345674,24.4448049,0
+            54.4405755,24.4441798,0
+            54.4524202,24.4410543,0
+            54.4608316,24.4366784,0
+            54.4723329,24.4271447,0
+            54.4763134,24.4253866,0
+            54.4816671,24.4244098,0
+            54.4863662,24.4239407,0
+            54.4979242,24.4221003,0
+            54.5022158,24.4222176,0
+            54.5063357,24.4221784,0
+            54.5156912,24.4224129,0
+            54.5209269,24.4227255,0
+            54.5398096,24.4281178,0
+            54.5895056,24.4417146,0
+            54.6122507,24.4482,0
+            54.6196322,24.4503877,0
+            54.6218638,24.4523411,0
+            54.6232371,24.4520285,0
+            54.6239237,24.4532786,0
+            54.6236662,24.4541381,0
+            54.6228079,24.4544506,0
+            54.6216921,24.4543725,0
+            54.6208338,24.4542944,0
+            54.6182589,24.4562476,0
+            54.6163706,24.4571852,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>NYUAD Bus Stops</name>
+      <Placemark>
+        <name>Stop 1</name>
+        <styleUrl>#icon-1532-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            54.4336587,24.5232396,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stop 2</name>
+        <styleUrl>#icon-1532-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            54.4237088,24.5331109,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stop 3</name>
+        <styleUrl>#icon-1532-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            54.4194145,24.5328736,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stop 5</name>
+        <styleUrl>#icon-1532-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            54.3741557,24.497664,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stop 6</name>
+        <styleUrl>#icon-1532-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            54.3704708,24.4950483,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stop 8</name>
+        <styleUrl>#icon-1532-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            54.364605,24.4874152,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stop 7</name>
+        <styleUrl>#icon-1532-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            54.3640728,24.4906074,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stop 9</name>
+        <styleUrl>#icon-1532-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            54.3665316,24.4841394,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stop 11</name>
+        <styleUrl>#icon-1532-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            54.3773787,24.4705078,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stop 10</name>
+        <styleUrl>#icon-1532-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            54.3720216,24.4764561,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stop 2</name>
+        <styleUrl>#icon-1532-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            54.431841,24.5250058,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
